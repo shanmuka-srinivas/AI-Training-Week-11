@@ -1,0 +1,54 @@
+{
+  "trace_id": "t-20261020-ed8e7b",
+  "ts": "2026-10-20T16:40:37+00:00",
+  "user_id": "u-0017",
+  "channel": "mobile",
+  "input_type": "substitution",
+  "prompt_version": "v1.1.0",
+  "model": "Qwen2.5-3B-Instruct Q4_K_M (llama.cpp, local CPU)",
+  "question": "I'm dairy-free. What can I use instead of the buttermilk in the pancakes?",
+  "answer": "For your pancakes, you can use milk plus lemon juice: 1 cup milk + 1 tbsp lemon, rest 10 minutes.",
+  "status": "finished",
+  "context_ids": [
+    "ingredient-db::cultured buttermilk"
+  ],
+  "spans": [
+    {
+      "name": "llm_call_1",
+      "kind": "generation",
+      "ms": 42299.1,
+      "input_tokens": 752,
+      "output_tokens": 39,
+      "cost_usd": 9.08e-05
+    },
+    {
+      "name": "substitutes_for",
+      "kind": "tools",
+      "ms": 7.5,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "args": {
+        "name": "buttermilk"
+      }
+    },
+    {
+      "name": "llm_call_2",
+      "kind": "generation",
+      "ms": 12109.6,
+      "input_tokens": 862,
+      "output_tokens": 59,
+      "cost_usd": 0.0001098
+    }
+  ],
+  "totals": {
+    "ms": 54416.4,
+    "input_tokens": 1614,
+    "output_tokens": 98,
+    "tokens": 1712,
+    "cost_usd": 0.0002006,
+    "llm_calls": 2,
+    "tool_calls": 1
+  },
+  "simulated": false
+}

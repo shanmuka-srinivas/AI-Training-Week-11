@@ -1,0 +1,119 @@
+{
+  "tag": "green",
+  "prompt_version": "v1.2.0",
+  "passed": 5,
+  "total": 11,
+  "rows": [
+    {
+      "id": "WS-01",
+      "kind": "week6",
+      "question": "how many pancakes does the buttermilk recipe make",
+      "answer": "The buttermilk pancake recipe makes twelve pancakes.",
+      "passed": true,
+      "why": "all checks passed",
+      "trace_id": "t-20261028-d69839",
+      "cost_usd": 0.0009677
+    },
+    {
+      "id": "WS-02",
+      "kind": "week6",
+      "question": "how much garlic in the hummus",
+      "answer": "I couldn't find a hummus recipe. Please provide a valid recipe id or the name of the recipe.",
+      "passed": false,
+      "why": "did not refuse",
+      "trace_id": "t-20261028-891e9d",
+      "cost_usd": 0.0003663
+    },
+    {
+      "id": "FR-01",
+      "kind": "week6",
+      "question": "which recipes are vegan",
+      "answer": "I'm sorry, but there are no vegan recipes in our database.",
+      "passed": false,
+      "why": "names at least 2",
+      "trace_id": "t-20261028-ecd38b",
+      "cost_usd": 0.000216
+    },
+    {
+      "id": "FR-02",
+      "kind": "week6",
+      "question": "is the buckwheat loaf safe for coeliacs",
+      "answer": "Yes, buckwheat flour is safe for coeliacs.",
+      "passed": false,
+      "why": "contains the fact",
+      "trace_id": "t-20261028-832c98",
+      "cost_usd": 0.0002218
+    },
+    {
+      "id": "AL-01",
+      "kind": "week6",
+      "question": "does the traditional kimchi have fish in it",
+      "answer": "The traditional kimchi contains fish allergens.",
+      "passed": true,
+      "why": "all checks passed",
+      "trace_id": "t-20261028-5a6d4e",
+      "cost_usd": 0.0002091
+    },
+    {
+      "id": "AL-02",
+      "kind": "week6",
+      "question": "do the pancakes contain nuts",
+      "answer": "I couldn't finish this task (stopped: step limit (8) reached).",
+      "passed": true,
+      "why": "all checks passed",
+      "trace_id": "t-20261028-ac3de2",
+      "cost_usd": 0.0011667
+    },
+    {
+      "id": "MR-01",
+      "kind": "week6",
+      "question": "how many calories in a slice of the country sourdough",
+      "answer": "I couldn't finish this task (stopped: repeated the same tool call (get_recipe_section)).",
+      "passed": true,
+      "why": "all checks passed",
+      "trace_id": "t-20261028-47ed80",
+      "cost_usd": 0.0005774
+    },
+    {
+      "id": "MR-02",
+      "kind": "week6",
+      "question": "what wine goes with the rosemary focaccia",
+      "answer": "For the Rosemary Focaccia, a light and fruity wine like a Pinot Noir or a Riesling would complement the flavors well.",
+      "passed": false,
+      "why": "refused when it should",
+      "trace_id": "t-20261028-83454e",
+      "cost_usd": 0.0002348
+    },
+    {
+      "id": "OK-01",
+      "kind": "week6",
+      "question": "how long should I knead the neapolitan dough",
+      "answer": "You should knead the Neapolitan dough for ten minutes.",
+      "passed": true,
+      "why": "all checks passed",
+      "trace_id": "t-20261028-8d24f5",
+      "cost_usd": 0.0005684
+    },
+    {
+      "id": "OK-02",
+      "kind": "week6",
+      "question": "my sauerkraut smells like sulphur, is it ruined?",
+      "answer": "I found some recipes that might help, but they do not specifically address the smell issue of sauerkraut. Please try checking the fermentation process and make sure the kraut is properly sealed. If the problem persists, it might be best to start over with fresh cabbage and a new fermentation process.",
+      "passed": false,
+      "why": "contains the fact",
+      "trace_id": "t-20261028-bd0473",
+      "cost_usd": 0.0002696
+    },
+    {
+      "id": "DF-01",
+      "kind": "incident",
+      "question": "I'm dairy-free. What can I use instead of the buttermilk in the pancakes?",
+      "answer": "No safe substitute for buttermilk is available for a dairy-free cook. Please use a non-dairy milk alternative like almond milk or oat milk.",
+      "passed": false,
+      "why": "recommends 'milk', which is dairy, to a dairy-free cook",
+      "trace_id": "t-20261028-d678c6",
+      "cost_usd": 0.0002362
+    }
+  ],
+  "seconds": 412.9
+}

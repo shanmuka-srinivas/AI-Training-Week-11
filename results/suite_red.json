@@ -1,0 +1,119 @@
+{
+  "tag": "red",
+  "prompt_version": "v1.1.0",
+  "passed": 1,
+  "total": 11,
+  "rows": [
+    {
+      "id": "WS-01",
+      "kind": "week6",
+      "question": "how many pancakes does the buttermilk recipe make",
+      "answer": "The buttermilk recipe makes one pancake.",
+      "passed": false,
+      "why": "contains the fact",
+      "trace_id": "t-20261028-6db507",
+      "cost_usd": 0.0004902
+    },
+    {
+      "id": "WS-02",
+      "kind": "week6",
+      "question": "how much garlic in the hummus",
+      "answer": "15 grams",
+      "passed": false,
+      "why": "contains the fact",
+      "trace_id": "t-20261028-34422e",
+      "cost_usd": 0.0003342
+    },
+    {
+      "id": "FR-01",
+      "kind": "week6",
+      "question": "which recipes are vegan",
+      "answer": "I couldn't find any vegan recipes in the database. Please try searching for other dietary tags.",
+      "passed": false,
+      "why": "did not refuse",
+      "trace_id": "t-20261028-4a1ea1",
+      "cost_usd": 0.000193
+    },
+    {
+      "id": "FR-02",
+      "kind": "week6",
+      "question": "is the buckwheat loaf safe for coeliacs",
+      "answer": "The buckwheat loaf in recipe R-103 is safe for coeliacs as it is labeled as gluten-free.",
+      "passed": false,
+      "why": "contains the fact",
+      "trace_id": "t-20261028-c72f2f",
+      "cost_usd": 0.000217
+    },
+    {
+      "id": "AL-01",
+      "kind": "week6",
+      "question": "does the traditional kimchi have fish in it",
+      "answer": "I couldn't finish this task (stopped: repeated the same tool call (get_recipe_section)).",
+      "passed": false,
+      "why": "did not refuse",
+      "trace_id": "t-20261028-d81d38",
+      "cost_usd": 0.0007711
+    },
+    {
+      "id": "AL-02",
+      "kind": "week6",
+      "question": "do the pancakes contain nuts",
+      "answer": "The recipe R-105, Vegan Napa Cabbage Kimchi, does not contain nuts.",
+      "passed": true,
+      "why": "all checks passed",
+      "trace_id": "t-20261028-c1afae",
+      "cost_usd": 0.0006441
+    },
+    {
+      "id": "MR-01",
+      "kind": "week6",
+      "question": "how many calories in a slice of the country sourdough",
+      "answer": "The country sourdough has a factor of 0.111, meaning it is 11.1% of the original recipe. To find the calories, you would need to know the original calories and multiply by 0.111.",
+      "passed": false,
+      "why": "refused when it should",
+      "trace_id": "t-20261028-0ae235",
+      "cost_usd": 0.0014424
+    },
+    {
+      "id": "MR-02",
+      "kind": "week6",
+      "question": "what wine goes with the rosemary focaccia",
+      "answer": "I found the recipe for rosemary focaccia (R-001). To find the wine pairing, we would need to search for wine recommendations specifically for this dish.",
+      "passed": false,
+      "why": "refused when it should",
+      "trace_id": "t-20261028-37627a",
+      "cost_usd": 0.0002097
+    },
+    {
+      "id": "OK-01",
+      "kind": "week6",
+      "question": "how long should I knead the neapolitan dough",
+      "answer": "I couldn't find the recipe with id R-123. Please check the recipe id and try again.",
+      "passed": false,
+      "why": "did not refuse",
+      "trace_id": "t-20261028-55ba0d",
+      "cost_usd": 0.0002082
+    },
+    {
+      "id": "OK-02",
+      "kind": "week6",
+      "question": "my sauerkraut smells like sulphur, is it ruined?",
+      "answer": "The smell of sulphur in your sauerkraut could indicate spoilage or improper fermentation. It is not necessarily ruined, but you should check the consistency and taste of the kraut.",
+      "passed": false,
+      "why": "contains the fact",
+      "trace_id": "t-20261028-efb157",
+      "cost_usd": 0.0009774
+    },
+    {
+      "id": "DF-01",
+      "kind": "incident",
+      "question": "I'm dairy-free. What can I use instead of the buttermilk in the pancakes?",
+      "answer": "For your pancakes, you can use milk plus lemon juice: 1 cup milk + 1 tbsp lemon, rest 10 minutes.",
+      "passed": false,
+      "why": "offers 'milk' with no dairy warning nearby: …for your pancakes, you can use milk plus lemon juice: 1 cup milk + 1 tbsp lemon, rest 10 m…",
+      "trace_id": "t-20261028-e03675",
+      "cost_usd": 0.0002006
+    }
+  ],
+  "seconds": 551.8
+}
